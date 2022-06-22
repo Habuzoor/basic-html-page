@@ -40,7 +40,7 @@ header .logo img {
 .body {
     display: flex;
     padding: 40px;
-    background-color: #ff6600;
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -59,10 +59,12 @@ main .cities table{
     text-align: justify;
     padding: 20px;
     min-width: 100%;
+    text-align: center;
 }
 
-main .cities table tr td{
-    border-bottom: #000000 solid 1px;
+main .cities table thead tr th{
+    border-bottom: #0066ff solid 1px;
+    /*background-color: red;*/
 }
 
 main .contact form {
@@ -74,19 +76,29 @@ main .contact form {
 main .contact form input, main .contact form textarea{
     display: flex;
     flex-direction: column;
-    border: none;
+    border: 1px solid #0066ff;
     border-radius: 5px;
     margin: 5px;
 }
 
+main .contact form input:focus{
+    text-align: center;
+}
+
 main .contact form button{
     margin: 10px;
-    outline: none;
-    border: none;
+    border: 0.5px solid #0066ff;
     padding: 3px;
     border-radius: 5px;
     color: #0066ff;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+main .contact form button:hover{
+    outline: none;
+    color: #ffffff;
+    background-color: #0066ff;
 }
 
 aside {
@@ -114,7 +126,13 @@ aside table th {
 
 /* Footer part */
 footer {
+    color: #ffffff;
     background-color: #0066ff;
     display: flex;
     padding: 1rem;
+}
+
+footer .social-media a{
+    text-decoration: none;
+    color: #ffffff;
 }
