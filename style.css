@@ -2,137 +2,158 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: auto;
-    padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
 }
 
 /* Header part */
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #0066ff;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0066ff;
+  color: white;
 }
 
 .navbar ul {
-    list-style: none;
-    overflow: hidden;
+  list-style: none;
+  overflow: hidden;
 }
 
 .navbar li {
-    display: inline;
+  display: inline;
 }
 
 .navbar li a {
-    text-decoration: none;
-    text-align: center;
-    padding: 14px 16px;
-    color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
 }
 
 header .logo img {
-    width: 100px;
+  width: 100px;
 }
 
 /* Body part */
 
 .body {
-    display: flex;
-    padding: 40px;
-    background-color: #ffffff;
-    color: #000000;
+  display: flex;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 main {
-    width: 70%;
-    text-align: center;
+  width: 70%;
+  text-align: center;
 }
 
 main .about p {
-    text-align: justify;
-    padding: 20px;
+  text-align: justify;
+  padding: 20px;
 }
 
-main .cities table{
-    
-    text-align: justify;
-    padding: 20px;
-    min-width: 100%;
-    text-align: center;
+main .cities table {
+  text-align: justify;
+  padding: 20px;
+  min-width: 100%;
+  text-align: center;
 }
 
-main .cities table thead tr th{
-    border-bottom: #0066ff solid 1px;
-    /*background-color: red;*/
+main .cities table thead tr th {
+  border-bottom: #0066ff solid 1px;
+  /*background-color: red;*/
 }
 
 main .contact form {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-main .contact form input, main .contact form textarea{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #0066ff;
-    border-radius: 5px;
-    margin: 5px;
+main .contact form input,
+main .contact form textarea {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0066ff;
+  border-radius: 5px;
+  margin: 5px;
 }
 
-main .contact form input:focus{
-    text-align: center;
+main .contact form input:focus {
+  text-align: center;
 }
 
-main .contact form button{
-    margin: 10px;
-    border: 0.5px solid #0066ff;
-    padding: 3px;
-    border-radius: 5px;
-    color: #0066ff;
-    background-color: #ffffff;
-    cursor: pointer;
+main .contact form button {
+  margin: 10px;
+  border: 0.5px solid #0066ff;
+  padding: 3px;
+  border-radius: 5px;
+  color: #0066ff;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
-main .contact form button:hover{
-    outline: none;
-    color: #ffffff;
-    background-color: #0066ff;
+main .contact form button:hover {
+  outline: none;
+  color: #ffffff;
+  background-color: #0066ff;
 }
 
 aside {
-    width: 30%;
-    margin: 0;
+  width: 30%;
+  margin: 0;
 }
 
 aside table {
-    text-align: justify;
-    padding: 16px;
-    margin-top: 10px;
+  text-align: justify;
+  padding: 16px;
+  margin-top: 10px;
 }
 
 aside table caption {
-    font-weight: 600;
-    margin-left: -40px;
+  font-weight: 600;
+  margin-left: -40px;
 }
 
 aside table th {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
-
-
 
 /* Footer part */
 footer {
-    color: #ffffff;
-    background-color: #0066ff;
-    display: flex;
-    padding: 1rem;
+  color: #ffffff;
+  background-color: #0066ff;
+  display: flex;
+  padding: 1rem;
 }
 
-footer .social-media a{
-    text-decoration: none;
-    color: #ffffff;
+footer .social-media a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .body {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    padding: 16px;
+    gap: 10px;
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 16px;
+  }
 }
